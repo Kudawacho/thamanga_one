@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>User Guide</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1">
+		<meta name="robots" content="noindex, nofollow">
+		<link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAqFBMVEUAAAAzQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU8zQU+vbZcxAAAAN3RSTlMAAQIDBAUGCAsOEBESFhccHR8gJzM3Pk1OUFRmbXeCg4uMjpSjpqiwtLW3usDO09fZ2uDm6O/9IUR6cgAAAH1JREFUGBltwdUWglAARcGNCNjY2B1YWOD5/z/T68L75AwfgawSxkzZxthKRYxEEYanAw0glDWoLYFYSeAbsarDCEi1cAw3fXKqQF3W1H8Ac1md7gS4ynJXbWjJ2jmZA3tZ/eYauCn3OhbGPeAc8uPefaB8kTXiy/NzBf55A27BHFFEBO8ZAAAAAElFTkSuQmCC" rel="icon" type="image/x-icon">
+		<style>*{box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"segoe ui",roboto,oxygen,ubuntu,cantarell,"fira sans","droid sans","helvetica neue",Arial,sans-serif;font-size:16px;line-height:24px}body,html{padding:0;margin:0}body{background-color:#f1f3f7}.content{width:800px;background-color:#fff;margin:25px auto 25px auto;padding:25px;box-shadow:0 0 5px rgba(0,0,0,.2)}h2{font-size:18px;color:#495362;padding:15px 0;border-top:1px solid #f5f7f9;border-bottom:1px solid #f5f7f9}h1{margin:0;font-size:20px;color:#495362;padding:15px 0;text-align:center}h2{margin:30px 0 0 0}li{padding:0 0 6px 0}li span{color:red;font-weight:600}li i{color:#37a269}a{color:#006edf;text-decoration:none}a:hover{color:#005bb8}code{display:block;width:100%;border-radius:5px;font-family:Consolas,Monaco,"andale mono","ubuntu mono",monospace;padding:15px;background-color:#f3f4f7;font-size:14px}@media screen and (max-width:800px){.content{width:95%}}</style>
+	</head>
+	<body>
+    	<div class="content">
+
+			<h1>User Guide</h1>
+
+			<h2>Thank you for purchasing from CodeShack!</h2>
+			<p>Your support will help keep our website up and running, and will help us provide you with more quality content!</p>
+			<p>If you have any issues don't hesitate to contact us via our <a href="https://codeshack.io" target="_blank">website</a> or directly to our email at <a href="mailto:support@codeshack.io" target="_top">support@codeshack.io</a>.</p>
+			<p>You can view more information about this package <a href="https://codeshack.io/package/php/advanced-shopping-cart-system/" target="_blank">here</a> (FAQs, updates, etc).</p>
+
+			<h2>Requirements</h2>
+			<p>I recommend you read the following tutorials on our website (if you haven't already):</p>
+			<ol>
+				<li><a href="https://codeshack.io/shopping-cart-system-php-mysql/" target="_blank">https://codeshack.io/shopping-cart-system-php-mysql/</a></li>
+			</ol>
+			<p>You will need the following:</p>
+			<ol>
+				<li><a href="https://www.apachefriends.org/index.html" target="_blank">XAMPP</a> or a web-server with PHP, MySQL & phpMyAdmin, if you've purchased web hosting you will only need to upload the files to your web directory.</li>
+				<li>A code editor, you can use notepad to edit the PHP files but I don't recommend it, instead download one of the following: <a href="https://notepad-plus-plus.org/downloads/" target="_blank">Notepad++</a>, <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>, or <a href="https://atom.io/" target="_blank">Atom</a>.</li>
+			</ol>
+
+			<h2>Instructions</h2>
+			<ol>
+				<li>Open the XAMPP control panel and start Apache and MySQL</li>
+				<li>Upload/import the "shoppingcart.sql" file in <a href="http://localhost/phpmyadmin/" target="_blank">phpMyAdmin</a><br><span>NOTE:</span> If you get a MySQL permissions error you might need to create the database manually.</li>
+				<li>Copy/cut one of the packages folder into your web directory (htdocs/www etc)</li>
+				<li>Rename the directory to "shoppingcart" and go to <a href="http://localhost/shoppingcart/" target="_blank">http://localhost/shoppingcart/</a> in your web browser</li>
+				<li>
+					<b>Basic:</b> Edit the "function.php" file and update the MySQL details (if you need to) in the "pdo_connect_mysql" function<br>
+					<b>Advanced:</b> Edit the "config.php" and update the database variables, you can also change them with the "Admin Panel", click the "Settings" link.
+				</li>
+				<li>You can add new products directly in phpMyAdmin, click the "products" table and click the "Insert" tab, ignore the ID column as this will auto increment<br>
+					<span>NOTE:</span> Advanced users can add new products and products images via the admin panel, make sure the user has their "admin" column set to 1 in the MySQL "accounts" table.
+				</li>
+				<li>Enjoy coding and thank you for supporting us!</li>
+			</ol>
+			<p>How to Access the Admin Panel</p>
+			<p>Navigate to the "My Account" page and log-in with the following credentials:</p>
+			<p>
+				<b>Email:</b> admin@codeshack.io<br>
+				<b>Password:</b> admin
+			</p>
+			<p>You should see the "Admin" tab located in the top navigation bar. If you click this tab it will redirect you to the admin panel. You can change the default admin credentials via the "Admin &#62; Accounts" page.</p>
+			<p>How to set-up PayPal</p>
+			<ol>
+				<li>The shopping cart system needs be on a production server. PayPal sends a request to the IPN file on every purchase made, therefore this will not work on your local computer unless the shopping cart pages can be accessed remotely.</li>
+				<li>Log-In via the "My Account" page with an admin account, and click the "Admin" link.</li>
+				<li>Click the "Settings" tab and update the PayPal variables.</li>
+				<li>PayPal is currently in test mode, while being in test mode you can make dummy payments etc, you can create sandbox accounts here: <a href="https://developer.paypal.com/developer/accounts/" target="_blank">https://developer.paypal.com/developer/accounts/</a></li>
+				<li>If you are ready to start accepting payments with PayPal you can set the "paypal testmode" variable to false.</li>
+				<li>Make sure you update the IPN URL on the "Settings" page and update it in your PayPal account, click <a href="https://developer.paypal.com/docs/ipn/integration-guide/IPNSetup/">here</a> for the guide on how to set this up.</li>
+			</ol>
+			<p>How to set-up Stripe</p>
+			<ol>
+				<li>Stripe also requires your website to be on a production server, one that can accessed remotely.</li>
+				<li>Log-In to the <a href="https://stripe.com/">Stripe</a> dashboard and create a new secret key and publishable key.</li>
+				<li>Log-In via the "My Account" page with an admin account, and click the "Admin" link.</li>
+				<li>Click the "Settings" tab and update the Stripe variables.</li>
+				<li>Make sure you update the IPN URL on the "Settings" page.</li>
+			</ol>
+
+			<h2>FAQs</h2>
+			<ol>
+				<li>Why am I getting a MySQL error?<br><i>Make sure you edit the "functions.php" file and update the connection details, you might need to change the hostname if yours is different, and make sure you've uploaded the SQL file in phpMyAdmin.</i></li>
+				<li>How do I download the zip file again if I've accidently deleted/lost it?<br><i>The download link is in your email, if you do not have it you can use this link: <a href="https://codeshack.io/receiptresend/">https://codeshack.io/receiptresend/</a> to request a new email.</i></li>
+			</ol>
+
+		</div>
+    </body>
+</html>
