@@ -1,0 +1,106 @@
+---
+title: "Pie Server" 
+subtitle: "Pi-Hosted"
+logo: "logo.png"
+
+
+header: true 
+footer: true
+
+colors: 
+  light: 
+    highlight-primary: "#3367d6"  
+    highlight-secondary: "#4285f4" 
+    highlight-hover: "#5a95f5" 
+    background: "#f5f5f5" 
+    card-background: "#ffffff" 
+    text: "#363636" 
+    text-header: "#ffffff" 
+    text-title: "#303030" 
+    text-subtitle: "#424242" 
+    card-shadow: rgba(0, 0, 0, 0.1) 
+    link-hover: "#363636"
+  dark: 
+    highlight-primary: "#3367d6" 
+    highlight-secondary: "#4285f4" 
+    highlight-hover: "#5a95f5"  
+    background: "#131313" 
+    card-background: "#2b2b2b" 
+    text: "#eaeaea" 
+    text-header: "#ffffff" 
+    text-title: "#fafafa" 
+    text-subtitle: "#f5f5f5" 
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link-hover: "#ffdd57"
+
+  
+
+message:
+  url: https://api.chucknorris.io/jokes/random
+  mapping:
+    title: "id"
+    content: "value"
+  refreshInterval: 10000
+  
+links: 
+  - name: "Contribute" 
+    icon: "fab fa-github" 
+    url: https://github.com/bastienwirtz/homer 
+    target: "_blank" # optional html a tag target attribute
+  - name: "HIPHOP NEWS" 
+    icon: "fas fa-book" 
+    url: https://www.2dopeboyz.com
+    target: "_blank" # optional html a tag target attribute
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, sect$
+services: 
+  - name: "Applications" 
+    icon: "fas fa-cloud"
+    items:
+  - name: "Building App"
+    logo: "assets/tools/sample.png"
+    subtitle: "Building App"
+    tag: "app"
+    url: https://www.thamanga.com
+    target: "_blank" # optional html a tag target attribute 
+  - name: "Database" 
+    logo: "fa-solid fa-database"
+    
+    subtitle: "Bookmark example" 
+    tag: "app" 
+    url: https://192.168.1.64/phpmyadmin 
+    target: "_blank" # optional html a tag target attribute
+  - name: "Youtube" 
+    logo: "assets/tools/sample2.png" 
+    subtitle: "BKtv Channel" 
+    tag: "app"
+    # tagstyle: "is-success"
+    url: https://www.youtube.com/kudawacho
+    # class: "green" 
+    # background: red 
+    target: "_blank"
+
+    services:
+  - name: "Applications"
+    icon: "fas fa-cloud"
+    # A path to an image can also be provided. Note that icon take precedence if both icon and logo are set
+    items:
+      - name: "Awesome app"
+        logo: "assets/tools/sample.png"
+        # Alternatively a fa icon can be provided:
+        # icon: "fab fa-jenkins"
+        subtitle: "Bookmark example"
+        tag: "app"
+        url: "https://192.168.1.64/phpmyadmin "
+        target: "_blank" # optional html a tag target attribute
+      - name: "Another one"
+        logo: "assets/tools/sample2.png"
+        subtitle: "Another application"
+        tag: "app"
+        # tagstyle: "is-success"
+        url: "#"
+        # class: "green"
+        # background: red
+        # target: "_blank"
+
